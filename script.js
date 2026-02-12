@@ -977,15 +977,3 @@ btn.onclick = () => {
   });
 };
 
-// LOADER
-
-// window.addEventListener("load", () => {
-//   setTimeout(() => {
-//     document.getElementById("re-loader").style.opacity = "0";
-//     document.getElementById("re-loader").style.transition = "opacity .6s ease";
-
-//     setTimeout(() => {
-//       document.getElementById("re-loader").style.display = "none";
-//     }, 600);
-//   }, 2600);
-// });
