@@ -807,6 +807,9 @@
   .border-lime-400 {
     border-color: var(--color-lime-400);
   }
+  .border-primary {
+    border-color: var(--color-primary);
+  }
   .border-white {
     border-color: var(--color-white);
   }
