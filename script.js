@@ -275,7 +275,7 @@ window.addEventListener("load", () => {
     })
     .to(loader, {
       opacity: 0,
-      duration: 0.6,
+      duration: 1.6,
       ease: "power2.out",
     })
     .set(loader, { display: "none" });
