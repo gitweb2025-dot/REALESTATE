@@ -1,0 +1,2115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      StackEstate | Smart Real Estate Investment & Property Listings
+    </title>
+    <meta
+      name="description"
+      content="StackEstate helps you buy, sell, and invest in real estate with confidence. Explore verified listings, market insights, and expert guidance."
+    />
+    <meta
+      name="keywords"
+      content="real estate, property listings, buy home, sell property, real estate investment, StackEstate"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="StackEstate | Smart Real Estate Solutions"
+    />
+    <meta
+      property="og:description"
+      content="Buy, sell, and invest in real estate with trusted listings and expert insights from StackEstate."
+    />
+    <meta property="og:site_name" content="StackEstate" />
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <!-- ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+    <!-- ScrollTo -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollToPlugin.min.js"></script>
+    <!-- ScrollSmoother  -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>
+    <!-- SplitText -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
+    <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/EasePack.min.js"></script>
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- GOOGLE FONT CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cinzel:wght@400..900&family=Dancing+Script:wght@400..700&family=Della+Respira&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- J-QUERY CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- LENIS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/lenis@1.3.17/dist/lenis.css"
+    />
+    <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="font-tertiary">
+    <!-- REAL ESTATE LOADER -->
+    <div id="re-loader" class="re-loader-wrap">
+      <div class="re-loader-inner">
+        <!-- house icon -->
+        <div class="re-house">
+          <svg viewBox="0 0 100 100">
+            <path d="M10 52 L50 18 L90 52" class="roof" />
+            <rect x="22" y="52" width="56" height="30" rx="3" class="body" />
+            <rect x="45" y="62" width="10" height="20" class="door" />
+          </svg>
+        </div>
+
+        <!-- text -->
+        <div class="re-text">
+          <span>S</span>
+          <span>T</span>
+          <span>A</span>
+          <span>C</span>
+          <span>K</span>
+
+          <span class="gap"></span>
+
+          <span>E</span>
+          <span>S</span>
+          <span>T</span>
+          <span>A</span>
+          <span>T</span>
+          <span>E</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- SITE CONTENT -->
+    <div>
+      <div class="relative max-w-7xl mx-auto w-full overflow-hidden">
+        <img
+          class="w-full h-full object-cover object-top absolute inset-0 z-[-1] hero-image"
+          src="./src/assets/home.webp"
+          alt="home"
+          aria-label="background_image"
+        />
+
+        <!-- NAVBAR -->
+        <header
+          class="fixed top-0 left-0 right-0 max-w-7xl mx-auto w-full z-40 text-sm"
+        >
+          <!-- DESKTOP NAVBAR -->
+          <nav
+            aria-label="navbar"
+            id="navbar"
+            class="bg-transparent flex items-center justify-between px-6 md:px-12 py-3 md:py-4 border border-white/10 rounded-full m-6 text-white"
+          >
+            <div>
+              <a class="font-bold" href="./index.html">STACKLY</a>
+            </div>
+            <div class="hidden mdxl:flex items-center gap-8">
+              <!-- HOME DROPDOWN -->
+              <div class="relative">
+                <div class="flex items-center gap-1 font-medium">
+                  <a href="./index.html" class="font-medium">HOME</a>
+
+                  <button id="homeToggle">
+                    <svg
+                      id="homeCaret"
+                      class="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      />
+                    </svg>
+                  </button>
+                </div>
+
+                <!-- Dropdown -->
+                <div
+                  id="homeMenu"
+                  class="absolute left-0 mt-3 w-36 rounded-xl bg-white backdrop-blur-xl border border-white/20 shadow-lg overflow-hidden hidden"
+                >
+                  <a
+                    href="./404.html"
+                    class="home-item block px-6 py-4 text-sm hover:bg-primary/10"
+                    >Home 2</a
+                  >
+                </div>
+              </div>
+
+              <!-- ABOUT -->
+              <a href="./404.html">ABOUT</a>
+              <a href="./404.html">SERVICES</a>
+              <a href="./404.html">PRICING</a>
+              <a href="./404.html">CONTACT</a>
+            </div>
+            <div>
+              <a
+                href="./404.html"
+                class="font-medium hidden lg:flex items-center gap-3 bg-primary text-black px-4 py-2 rounded-full"
+              >
+                Get Consultation
+                <div>
+                  <div
+                    class="bg-black text-primary rounded-full w-10 h-10 flex items-center justify-center"
+                  >
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square text-sm"
+                    ></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- HAMBURGER ICON -->
+            <div class="text-2xl cursor-pointer ham-icon block lg:hidden">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </nav>
+
+          <!-- MOBILE NAV -->
+          <div
+            class="fixed inset-0 w-full h-full bg-white flex flex-col gap-12 justify-center px-12 md:px-20 z-40 transform translate-x-full transition-transform duration-1000 text-xl sm:text-3xl font-bold mobile-menu"
+          >
+            <!-- HOME with sub menu -->
+            <div class="relative">
+              <div class="flex items-center gap-2 menu-link">
+                <a href="./index.html">HOME</a>
+
+                <button id="mobileHomeToggle">
+                  <i
+                    id="mobileCaret"
+                    class="fa-solid fa-chevron-down text-lg"
+                  ></i>
+                </button>
+              </div>
+
+              <div
+                class="mt-4 hidden absolute bg-white rounded-lg z-40 w-40 px-6 py-6 text-2xl"
+                id="mobileHomeMenu"
+              >
+                <a class="block mobile-home-item mb-3" href="./404.html"
+                  >Home 2</a
+                >
+              </div>
+            </div>
+
+            <a class="menu-link" href="./404.html">ABOUT</a>
+            <a class="menu-link" href="./404.html">SERVICES</a>
+            <a class="menu-link" href="./404.html">PRICING</a>
+            <a class="menu-link" href="./404.html">CONTACT</a>
+            <a class="menu-link" href="./404.html">GET IN TOUCH</a>
+            <button
+              class="close-menu text-2xl cursor-pointer absolute top-10 right-12 p-4 border border-white/20 rounded-full"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+        </header>
+
+        <!-- HOME -->
+        <main id="home">
+          <section
+            class="hero-section relative h-full w-full pt-40 pb-20 overflow-hidden"
+          >
+            <!-- Dark Gradient -->
+            <div
+              class="z-[-1] absolute inset-0 w-full h-full bg-linear-to-t from-black/90 via-black/60 to-transparent"
+            ></div>
+
+            <!-- Content Container -->
+            <div class="relative z-10 max-w-7xl mx-auto px-6 h-full">
+              <div
+                class="grid grid-cols-1 lg:grid-cols-2 w-full items-center gap-10"
+              >
+                <!-- LEFT CONTENT -->
+                <div class="hero-left space-y-6">
+                  <div
+                    class="hero-badge inline-flex items-center gap-2 py-2 rounded-full bg-white/10 backdrop-blur text-white text-sm"
+                  >
+                    <span class="w-2 h-2 bg-primary rounded-full"></span>
+                    Building Trust. Creating Value.
+                  </div>
+
+                  <h1 class="hero-title text-white font-semibold leading-tight">
+                    <span
+                      class="block text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
+                    >
+                      Smart real estate
+                    </span>
+                    <span
+                      class="block italic font-light text-2xl md:text-3xl lg:text-4xl mt-2"
+                    >
+                      reliable construction
+                    </span>
+                  </h1>
+
+                  <div class="hero-cta flex items-center gap-6">
+                    <a
+                      href="./404.html"
+                      class="hero-btn font-medium flex items-center gap-3 bg-primary text-black px-4 py-2 rounded-full"
+                    >
+                      Get Consultation
+                      <div>
+                        <div
+                          class="bg-black text-primary rounded-full w-10 h-10 flex items-center justify-center"
+                        >
+                          <i
+                            class="fa-solid fa-arrow-up-right-from-square text-sm"
+                          ></i>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div
+                    class="hero-rating flex flex-wrap items-center gap-3 pt-2 text-white"
+                  >
+                    <span class="font-semibold text-lg">4.9</span>
+                    <div class="flex gap-1 text-primary">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <span class="text-sm text-white/70">
+                      Our World Wide Customer Review
+                    </span>
+                  </div>
+                </div>
+
+                <!-- RIGHT STATS -->
+                <div
+                  class="hero-stats grid grid-cols-3 gap-4 xsmd:gap-10 text-white text-center mt-auto"
+                >
+                  <div class="stat-item">
+                    <h2 class="text-xl xsmd:text-4xl font-semibold">25+</h2>
+                    <p class="text-[8px] xsmd:text-sm text-white/80 mt-2">
+                      Year of Experience
+                    </p>
+                  </div>
+
+                  <div class="stat-item">
+                    <h2 class="text-xl xsmd:text-4xl font-semibold">50+</h2>
+                    <p class="text-[8px] xsmd:text-sm text-white/80 mt-2">
+                      Expert Team Member
+                    </p>
+                  </div>
+
+                  <div class="stat-item">
+                    <h2 class="text-xl xsmd:text-4xl font-semibold">500+</h2>
+                    <p class="text-[8px] xsmd:text-sm text-white/80 mt-2">
+                      Project Completed
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+
+      <!-- ABOUT -->
+      <section
+        class="about-section bg-slate-50 max-w-7xl mx-auto py-24 overflow-hidden"
+      >
+        <div class="px-6">
+          <!-- TOP ROW -->
+          <div class="grid lg:grid-cols-2 gap-12 items-start mb-16">
+            <div class="about-left">
+              <div
+                class="about-badge inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full text-sm shadow-sm mb-6"
+              >
+                <span class="w-2 h-2 bg-lime-400 rounded-full"></span>
+                About Our Construction
+              </div>
+
+              <h2
+                class="about-title text-3xl md:text-4xl lg:text-5xl leading-[1.1] font-semibold text-gray-900"
+              >
+                Trusted builders creating <br />
+                modern
+                <span class="italic font-light">spaces with integrity</span>
+              </h2>
+            </div>
+
+            <div class="about-right space-y-6">
+              <p class="about-desc text-gray-500 max-w-md">
+                We are trusted builders committed to delivering modern, quality
+                spaces built with honesty, precision, and care.
+              </p>
+
+              <a
+                href="./404.html"
+                class="about-btn font-medium flex items-center gap-3 bg-primary text-black px-4 py-2 rounded-full w-fit"
+              >
+                Learn More About
+                <div>
+                  <div
+                    class="bg-black text-primary rounded-full w-10 h-10 flex items-center justify-center"
+                  >
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square text-sm"
+                    ></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- CARD GRID -->
+          <div class="grid lg:grid-cols-3 gap-8 items-end">
+            <!-- LARGE IMAGE -->
+            <div
+              class="relative rounded-3xl overflow-hidden card-hover about-image-left h-full"
+            >
+              <img
+                src="./src/assets/a1.webp"
+                alt="about"
+                class="w-full h-full object-cover"
+              />
+
+              <div
+                class="about-rotate bg-white rounded-full absolute top-6 left-6 w-32 h-32 rotating-badge"
+              >
+                <svg viewBox="0 0 200 200" class="w-full h-full">
+                  <!-- Circle Path -->
+                  <defs>
+                    <path
+                      id="circlePath"
+                      d="M 100, 100
+           m -75, 0
+           a 75,75 0 1,1 150,0
+           a 75,75 0 1,1 -150,0"
+                    />
+                  </defs>
+
+                  <!-- Circular Text -->
+                  <text fill="#111" font-size="19" font-weight="500">
+                    <textPath href="#circlePath" startOffset="0%">
+                      Explore Projects • Explore Projects • Explore Projects •
+                    </textPath>
+                  </text>
+                </svg>
+
+                <!-- Center Icon -->
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <i class="fa-solid fa-compass text-lime-400 text-2xl"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:col-span-2 mx-auto">
+              <div class="grid md:grid-cols-2 gap-8">
+                <!-- RIGHT CARDS -->
+                <div
+                  class="bg-white px-3 py-6 md:p-6 rounded-3xl card-hover about-middle-card"
+                >
+                  <h3 class="text-xl font-semibold mb-2">
+                    Your Trusted Partners
+                  </h3>
+                  <p class="text-gray-500 mb-8">
+                    We stand by you at every stage of the construction journey
+                  </p>
+
+                  <img
+                    src="./src/assets/a2.webp"
+                    alt="about"
+                    class="w-full h-64 object-cover rounded-2xl"
+                  />
+                </div>
+
+                <div
+                  class="bg-white px-3 py-6 md:p-6 rounded-3xl card-hover about-right-card"
+                >
+                  <img
+                    src="./src/assets/a3.webp"
+                    alt="about"
+                    class="w-full h-64 object-cover rounded-2xl mb-6"
+                  />
+
+                  <h3 class="text-lg font-semibold mb-2">
+                    Modern Design Solution
+                  </h3>
+                  <p class="text-gray-500 text-sm">
+                    We stand by you at every stage of the construction journey
+                  </p>
+                </div>
+              </div>
+
+              <!-- STATS -->
+              <div
+                class="about-stats grid grid-cols-1 xsmd:grid-cols-2 md:grid-cols-3 gap-12 justify-between px-8 about-stats mt-6"
+              >
+                <div>
+                  <h4 class="text-4xl font-semibold">
+                    <span class="stat-number" data-target="25">25</span>+
+                  </h4>
+                  <p class="text-gray-500 text-sm mt-2">
+                    Real Estate Expertise
+                  </p>
+                </div>
+
+                <div>
+                  <h4 class="text-4xl font-semibold">
+                    <span class="stat-number" data-target="50">50</span>+
+                  </h4>
+                  <p class="text-gray-500 text-sm mt-2">Expert Team Members</p>
+                </div>
+
+                <div>
+                  <h4 class="text-4xl font-semibold">
+                    <span class="stat-number" data-target="500">500</span>+
+                  </h4>
+                  <p class="text-gray-500 text-sm mt-2">Handed-Over Project</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--SERVICES CARD -->
+      <section
+        class="services-section max-w-7xl mx-auto py-24 bg-secondary overflow-hidden"
+      >
+        <div class="px-6 text-center">
+          <!-- BADGE -->
+          <div
+            class="services-badge inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full text-sm shadow-sm mb-6"
+          >
+            <span class="w-2 h-2 bg-lime-400 rounded-full"></span>
+            Our Services
+          </div>
+
+          <!-- TITLE -->
+          <h2
+            class="services-title text-3xl md:text-4xl lg:text-5xl leading-[1.2] font-semibold text-gray-900 max-w-3xl mx-auto mb-16"
+          >
+            Reliable services for real
+            <span class="italic font-light">estate and construction</span>
+          </h2>
+
+          <!-- CARDS -->
+          <div
+            class="services-grid grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-left"
+          >
+            <!-- CARD 1 -->
+            <div class="service-card rounded-3xl group overflow-hidden">
+              <!-- bg -->
+              <img
+                class="w-full h-full object-cover absolute inset-0 z-[-1] group-hover:scale-125 transition duration-800 ease-in-out"
+                src="./src/assets/s1.webp"
+                alt="service"
+              />
+
+              <div
+                class="bg-black/60 h-full w-full absolute inset-0 z-[-1] translate-y-full group-hover:translate-y-0 transition duration-800 ease-in-out"
+              ></div>
+
+              <!-- card contents -->
+              <div
+                class="bg-white h-full group-hover:bg-transparent transition duration-800 ease-in-out p-8"
+              >
+                <div class="mb-6">
+                  <div
+                    class="w-14 h-14 bg-[#0d1220] rounded-full flex items-center justify-center text-white text-xl group-hover:bg-primary group-hover:text-black transition duration-300 ease-in-out"
+                  >
+                    <i class="fa-solid fa-chart-simple"></i>
+                  </div>
+                </div>
+
+                <h3 class="font-semibold text-lg mb-3 group-hover:text-white">
+                  Site Planning
+                </h3>
+                <p class="text-gray-600 group-hover:text-gray-100 text-sm mb-8">
+                  Strategic evaluation of land to determine optimal placement of
+                  structures, access routes, utilities, and open spaces.
+                </p>
+
+                <hr class="mb-6 border-gray-300" />
+
+                <a
+                  href="./404.html"
+                  class="service-link flex items-center justify-between font-medium text-sm group-hover:text-gray-100"
+                >
+                  View Details
+                  <span
+                    class="arrow-circle w-7 h-7 bg-lime-400 rounded-full flex items-center justify-center transition-all duration-300"
+                  >
+                    <i class="fa-solid fa-angle-right text-xs"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="service-card rounded-3xl group overflow-hidden">
+              <!-- bg -->
+              <img
+                class="w-full h-full object-cover absolute inset-0 z-[-1] group-hover:scale-125 transition duration-800 ease-in-out"
+                src="./src/assets/s2.webp"
+                alt="service"
+              />
+
+              <div
+                class="bg-black/60 h-full w-full absolute inset-0 z-[-1] translate-y-full group-hover:translate-y-0 transition duration-800 ease-in-out"
+              ></div>
+
+              <!-- card contents -->
+              <div
+                class="bg-white h-full group-hover:bg-transparent transition duration-800 ease-in-out p-8"
+              >
+                <div class="mb-6">
+                  <div
+                    class="w-14 h-14 bg-[#0d1220] rounded-full flex items-center justify-center text-white text-xl group-hover:bg-primary group-hover:text-black transition duration-300 ease-in-out"
+                  >
+                    <i class="fa-solid fa-desktop"></i>
+                  </div>
+                </div>
+
+                <h3 class="font-semibold text-lg mb-3 group-hover:text-white">
+                  Building Design
+                </h3>
+                <p class="text-gray-600 group-hover:text-gray-100 text-sm mb-8">
+                  Creation of architectural concepts that define structure,
+                  aesthetics, and usability. Balances form function.
+                </p>
+
+                <hr class="mb-6 border-gray-300" />
+
+                <a
+                  href="./404.html"
+                  class="service-link flex items-center justify-between font-medium text-sm group-hover:text-gray-100"
+                >
+                  View Details
+                  <span
+                    class="arrow-circle w-7 h-7 bg-lime-400 rounded-full flex items-center justify-center transition-all duration-300"
+                  >
+                    <i class="fa-solid fa-angle-right text-xs"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="service-card rounded-3xl group overflow-hidden">
+              <!-- bg -->
+              <img
+                class="w-full h-full object-cover absolute inset-0 z-[-1] group-hover:scale-125 transition duration-800 ease-in-out"
+                src="./src/assets/s3.webp"
+                alt="service"
+              />
+
+              <div
+                class="bg-black/60 h-full w-full absolute inset-0 z-[-1] translate-y-full group-hover:translate-y-0 transition duration-800 ease-in-out"
+              ></div>
+
+              <!-- card contents -->
+              <div
+                class="bg-white h-full group-hover:bg-transparent transition duration-800 ease-in-out p-8"
+              >
+                <div class="mb-6">
+                  <div
+                    class="w-14 h-14 bg-[#0d1220] rounded-full flex items-center justify-center text-white text-xl group-hover:bg-primary group-hover:text-black transition duration-300 ease-in-out"
+                  >
+                    <i class="fa-solid fa-square-check"></i>
+                  </div>
+                </div>
+
+                <h3 class="font-semibold text-lg mb-3 group-hover:text-white">
+                  Project Management
+                </h3>
+                <p class="text-gray-600 text-sm mb-8 group-hover:text-gray-100">
+                  Coordinated control of timeline, budget, resources, and team
+                  execution. Ensures milestones are met while.
+                </p>
+
+                <hr class="mb-6 border-gray-300" />
+
+                <a
+                  href="./404.html"
+                  class="service-link flex items-center justify-between font-medium text-sm group-hover:text-gray-100"
+                >
+                  View Details
+                  <span
+                    class="arrow-circle w-7 h-7 bg-lime-400 rounded-full flex items-center justify-center transition-all duration-300"
+                  >
+                    <i class="fa-solid fa-angle-right text-xs"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="service-card rounded-3xl group overflow-hidden">
+              <!-- bg -->
+              <img
+                class="w-full h-full object-cover absolute inset-0 z-[-1] group-hover:scale-125 transition duration-800 ease-in-out"
+                src="./src/assets/s4.webp"
+                alt="service"
+              />
+
+              <div
+                class="bg-black/60 h-full w-full absolute inset-0 z-[-1] translate-y-full group-hover:translate-y-0 transition duration-800 ease-in-out"
+              ></div>
+
+              <!-- card contents -->
+              <div
+                class="bg-white h-full group-hover:bg-transparent transition duration-800 ease-in-out p-8"
+              >
+                <div class="mb-6">
+                  <div
+                    class="w-14 h-14 bg-[#0d1220] rounded-full flex items-center justify-center text-white text-xl group-hover:bg-primary group-hover:text-black transition duration-300 ease-in-out"
+                  >
+                    <i class="fa-solid fa-pen-ruler"></i>
+                  </div>
+                </div>
+
+                <h3
+                  class="font-semibold text-lg mb-3 text-black group-hover:text-white"
+                >
+                  Design & Planning
+                </h3>
+                <p class="text-gray-600 text-sm mb-8 group-hover:text-gray-100">
+                  Integrated process of turning ideas into structured, buildable
+                  solutions. Combines creativity with technical.
+                </p>
+
+                <hr class="mb-6 border-gray-300" />
+
+                <a
+                  href="./404.html"
+                  class="service-link flex items-center justify-between font-medium text-sm group-hover:text-gray-100"
+                >
+                  View Details
+                  <span
+                    class="arrow-circle w-7 h-7 bg-lime-400 rounded-full flex items-center justify-center transition-all duration-300"
+                  >
+                    <i class="fa-solid fa-angle-right text-xs"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- BOTTOM REVIEW -->
+          <div
+            class="services-review mt-16 flex flex-col items-center gap-3 text-sm"
+          >
+            <div class="flex items-center gap-3">
+              <span class="text-gray-800">
+                Complete Real Estate And Construction Solutions –
+                <a href="./404.html" class="underline font-medium text-black"
+                  >View All Services.</a
+                >
+              </span>
+            </div>
+
+            <div class="flex items-center gap-2 font-medium">
+              4.9/5
+              <span class="text-lime-400 flex gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+              Our 4200 Review
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FIXED BG -->
+      <section class="fixed-bg relative">
+        <div
+          class="bg-linear-to-b from-transparent via-black/50 to-black absolute inset-0 w-full h-full"
+        ></div>
+        <section class="video-section absolute inset-0 overflow-hidden">
+          <!-- CONTENT -->
+          <div
+            class="relative z-10 max-w-7xl mx-auto h-full flex items-center px-6"
+          >
+            <div class="video-left text-white max-w-3xl">
+              <div
+                class="video-pill inline-flex items-center gap-2 bg-white/20 backdrop-blur px-5 py-2 rounded-full mb-6"
+              >
+                <span class="w-2 h-2 rounded-full bg-primary"></span>
+                <span class="text-sm">Watch Video</span>
+              </div>
+
+              <h1
+                class="video-title text-3xl md:text-4xl lg:text-5xl leading-tight font-semibold mb-4"
+              >
+                Watch how we build
+                <span class="italic font-light"
+                  >modern<br />quality living spaces</span
+                >
+              </h1>
+
+              <p class="video-desc">
+                Our real estate project delivers thoughtfully planned spaces
+                designed for modern living, combining smart layouts with premium
+                construction quality.
+              </p>
+            </div>
+          </div>
+
+          <!-- PLAY BUTTON -->
+          <div
+            class="video-play-wrapper absolute bottom-10 right-20 lg:top-1/2 z-20"
+          >
+            <div class="relative flex items-center justify-center">
+              <!-- rotating text -->
+              <div
+                class="video-rotating absolute w-28 h-28 rounded-full border border-white/30 bg-black backdrop-blur-3xl text-white"
+              >
+                <svg viewBox="0 0 200 200" class="w-full h-full">
+                  <!-- Circle Path -->
+                  <defs>
+                    <path
+                      id="circlePath"
+                      d="M 100, 100
+           m -75, 0
+           a 75,75 0 1,1 150,0
+           a 75,75 0 1,1 -150,0"
+                    />
+                  </defs>
+
+                  <!-- Circular Text -->
+                  <text fill="#fff" font-size="20" font-weight="500">
+                    <textPath href="#circlePath" startOffset="0%">
+                      Watch Video • Watch Video • Watch Video •
+                    </textPath>
+                  </text>
+                </svg>
+              </div>
+
+              <!-- button -->
+              <button
+                class="play-btn video-open w-16 h-16 rounded-full bg-lime-400 flex items-center justify-center relative z-10 cursor-pointer"
+              >
+                <i class="fa-solid fa-play text-black text-xl ml-1"></i>
+              </button>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- WHY SECTION -->
+      <section class="who-section max-w-7xl mx-auto py-24 overflow-hidden">
+        <div class="px-6">
+          <!-- BADGE -->
+          <div class="who-badge text-center mb-6">
+            <div
+              class="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full text-sm shadow-sm"
+            >
+              <span class="w-2 h-2 bg-lime-400 rounded-full"></span>
+              Who We Are
+            </div>
+          </div>
+
+          <!-- TITLE -->
+          <h2
+            class="who-title text-center text-3xl md:text-4xl lg:text-5xl leading-[1.2] font-semibold text-gray-900 mb-16"
+          >
+            Shaping residential and commercial <br />
+            <span class="italic font-light">spaces with expertise</span>
+          </h2>
+
+          <div class="grid lg:grid-cols-2 gap-16 items-start">
+            <!-- LEFT SIDE -->
+            <div>
+              <!-- TABS -->
+              <div
+                class="who-tabs flex gap-3 md:gap-6 border-b border-gray-300 pb-4 mb-10"
+              >
+                <button
+                  class="who-tab active-tab font-medium flex flex-col md:flex-row items-center cursor-pointer"
+                  data-tab="experts"
+                >
+                  Industry Experts
+                </button>
+
+                <button
+                  class="who-tab font-medium flex flex-col md:flex-row items-center cursor-pointer"
+                  data-tab="trusted"
+                >
+                  Trusted Builders
+                </button>
+
+                <button
+                  class="who-tab font-medium flex flex-col md:flex-row items-center cursor-pointer"
+                  data-tab="designers"
+                >
+                  Modern Designers
+                </button>
+              </div>
+
+              <!-- TAB CONTENT -->
+              <div class="who-content-wrapper">
+                <div class="who-content active-content" id="experts">
+                  <h3 class="text-xl font-semibold mb-4">Industry Experts:</h3>
+
+                  <p class="text-gray-600 mb-6 leading-relaxed">
+                    Our team delivers premium residential towers, commercial
+                    complexes, and mixed-use developments with structured
+                    planning, precise execution, and strict quality compliance
+                    to meet long-term investment value.
+                  </p>
+
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+                    <div class="flex items-center gap-3">
+                      <i class="fa-regular fa-circle-user text-lg"></i>
+                      Experience Professional
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                      <i class="fa-regular fa-gem text-lg"></i>
+                      Strong Safety Standard
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                      <i class="fa-regular fa-circle-check text-lg"></i>
+                      Client-Focus Approach
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                      <i class="fa-solid fa-sack-dollar text-lg"></i>
+                      Quality Craftsmanship
+                    </div>
+                  </div>
+                </div>
+
+                <div class="who-content hidden-content" id="trusted">
+                  <h3 class="text-xl font-semibold mb-4">Trusted Builders:</h3>
+
+                  <p class="text-gray-600 mb-6 leading-relaxed">
+                    We construct high-rise residential apartments and premium
+                    office buildings using certified materials, skilled
+                    workforce, and transparent communication from foundation to
+                    final handover.
+                  </p>
+
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+                    <div class="flex items-center gap-3">
+                      <i class="fa-solid fa-user-shield"></i>
+                      Transparent Process
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                      <i class="fa-solid fa-helmet-safety"></i>
+                      Certified Engineers
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                      <i class="fa-solid fa-clock"></i>
+                      On-Time Delivery
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                      <i class="fa-solid fa-award"></i>
+                      Premium Finishing
+                    </div>
+                  </div>
+                </div>
+
+                <div class="who-content hidden-content" id="designers">
+                  <h3 class="text-xl font-semibold mb-4">Modern Designers:</h3>
+
+                  <p class="text-gray-600 mb-6 leading-relaxed">
+                    Our architectural team designs sustainable living spaces,
+                    smart commercial layouts, and eco-conscious developments
+                    focused on innovation, functionality, and urban lifestyle
+                    enhancement.
+                  </p>
+
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+                    <div class="flex items-center gap-3">
+                      <i class="fa-solid fa-drafting-compass"></i>
+                      Smart Layout Planning
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                      <i class="fa-solid fa-leaf"></i>
+                      Sustainable Design
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                      <i class="fa-solid fa-city"></i>
+                      Urban Development
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                      <i class="fa-solid fa-lightbulb"></i>
+                      Innovative Concepts
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CTA -->
+              <div class="flex flex-wrap items-center gap-6 mt-12">
+                <a
+                  href="./404.html"
+                  class="who-btn font-medium flex items-center gap-3 bg-black text-primary px-4 py-2 rounded-full"
+                >
+                  Contact Us
+                  <div>
+                    <div
+                      class="bg-primary text-black rounded-full w-10 h-10 flex items-center justify-center"
+                    >
+                      <i
+                        class="fa-solid fa-arrow-up-right-from-square text-sm"
+                      ></i>
+                    </div>
+                  </div>
+                </a>
+
+                <div>
+                  <p class="text-gray-500 text-sm">Call Us Now!</p>
+                  <p class="font-semibold">+91 (123) 456-789</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div
+              class="relative grid grid-cols-1 md:grid-cols-2 gap-8 who-images"
+            >
+              <div>
+                <img
+                  src="./src/assets/why1.webp"
+                  alt="why"
+                  class="who-main-image rounded-3xl w-full h-full object-cover"
+                />
+              </div>
+
+              <div class="flex flex-col gap-10">
+                <!-- Review -->
+                <div class="who-review bg-white p-6 rounded-2xl shadow-lg">
+                  <div class="flex -space-x-2 mb-3">
+                    <img
+                      src="./src/assets/men1.webp"
+                      alt="person"
+                      class="w-14 h-14 object-top object-cover rounded-full border-2 border-white"
+                    />
+                    <img
+                      src="./src/assets/men3.webp"
+                      alt="person"
+                      class="w-14 h-14 object-top object-cover rounded-full border-2 border-white"
+                    />
+                    <img
+                      src="./src/assets/men4.webp"
+                      alt="person"
+                      class="w-14 h-14 object-top object-cover rounded-full border-2 border-white"
+                    />
+                    <div
+                      class="w-14 h-14 object-top object-cover bg-lime-400 rounded-full flex items-center justify-center text-xl font-semibold border-2 border-white"
+                    >
+                      +
+                    </div>
+                  </div>
+
+                  <div class="text-lime-400 mb-1">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+
+                  <p class="text-sm text-gray-600">Our 5k+ Satisfied Client</p>
+                </div>
+
+                <div>
+                  <img
+                    src="./src/assets/why2.webp"
+                    alt="why"
+                    class="who-small-image rounded-3xl shadow-xl w-full"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section
+        class="projects-bg bg-[#1a2236] max-w-7xl mx-auto py-28 overflow-hidden"
+      >
+        <div class="px-6">
+          <!-- HEADER -->
+          <div class="text-center mb-16 projects-header text-white">
+            <span
+              class="inline-flex items-center gap-2 bg-[#1a2236] px-5 py-2 rounded-full text-sm mb-6"
+            >
+              <span class="w-2 h-2 bg-lime-400 rounded-full"></span>
+              Our Projects
+            </span>
+
+            <h2
+              class="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight"
+            >
+              Our work defined by precision <br />
+              <span class="italic font-medium">strength And Integrity</span>
+            </h2>
+          </div>
+
+          <!-- CARDS -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 projects-grid"
+          >
+            <!-- CARD 1 -->
+            <div
+              class="project-card relative overflow-hidden rounded-3xl h-130"
+            >
+              <img
+                src="./src/assets/ser1.webp"
+                alt="service"
+                class="w-full h-full object-cover"
+              />
+
+              <div
+                class="project-overlay absolute inset-0 bg-linear-to-t from-black/80 via-black/30 to-transparent"
+              ></div>
+
+              <div class="absolute bottom-8 left-8">
+                <p class="text-sm flex items-center gap-2 mb-2 text-gray-300">
+                  <span class="w-2 h-2 bg-lime-400 rounded-full"></span>
+                  Infrastructure
+                </p>
+                <h3 class="text-xl font-semibold text-white">
+                  The Vertex Plaza
+                </h3>
+              </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div
+              class="project-card relative overflow-hidden rounded-3xl h-130"
+            >
+              <img
+                src="./src/assets/ser2.webp"
+                alt="service"
+                class="w-full h-full object-cover"
+              />
+
+              <div
+                class="project-overlay absolute inset-0 bg-linear-to-t from-black/80 via-black/30 to-transparent"
+              ></div>
+
+              <div class="absolute bottom-8 left-8">
+                <p class="text-sm flex items-center gap-2 mb-2 text-gray-300">
+                  <span class="w-2 h-2 bg-lime-400 rounded-full"></span>
+                  Commercial
+                </p>
+                <h3 class="text-xl font-semibold text-white">
+                  Aurelia Business Park
+                </h3>
+              </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div
+              class="project-card relative overflow-hidden rounded-3xl h-130"
+            >
+              <img
+                src="./src/assets/ser3.webp"
+                alt="service"
+                class="w-full h-full object-cover"
+              />
+
+              <div
+                class="project-overlay absolute inset-0 bg-linear-to-t from-black/80 via-black/30 to-transparent"
+              ></div>
+
+              <div class="absolute bottom-8 left-8">
+                <p class="text-sm flex items-center gap-2 mb-2 text-gray-300">
+                  <span class="w-2 h-2 bg-lime-400 rounded-full"></span>
+                  Industrial
+                </p>
+                <h3 class="text-xl font-semibold text-white">
+                  Project Completion
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- BOTTOM CTA -->
+          <div
+            class="flex items-center justify-center gap-4 mt-16 projects-cta"
+          >
+            <p class="text-gray-300">
+              Let's make something great work together.
+              <a
+                href="./404.html"
+                class="cta-link text-lime-400 font-semibold underline"
+              >
+                Get Free Quote
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- OUR COMMITMENT -->
+      <section class="py-24 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            <!-- LEFT SIDE -->
+            <div class="commit-left">
+              <span
+                class="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full text-sm mb-6"
+              >
+                <span class="w-2 h-2 bg-lime-400 rounded-full"></span>
+                Our Commitment
+              </span>
+
+              <h2
+                class="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight text-[#0d0f1a] mb-6"
+              >
+                Dedicated to honest &
+                <span class="italic font-medium">reliable construction</span>
+              </h2>
+
+              <p class="text-gray-600 mb-8 leading-relaxed">
+                We are committed to delivering construction services built on
+                honesty, reliability, and transparency from planning to
+                completion, ensuring every project meets the highest standards.
+              </p>
+
+              <a
+                href="./404.html"
+                class="btn-hover font-medium inline-flex items-center gap-3 bg-primary text-black px-4 py-2 rounded-full mb-10"
+              >
+                Contact Us
+                <div>
+                  <div
+                    class="bg-black text-primary rounded-full w-10 h-10 flex items-center justify-center"
+                  >
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square text-sm"
+                    ></i>
+                  </div>
+                </div>
+              </a>
+
+              <!-- Avatar Group -->
+              <div class="flex items-center -space-x-2 mb-10">
+                <img
+                  src="./src/assets/men1.webp"
+                  alt="person"
+                  class="w-14 h-14 object-top object-cover rounded-full border-2 border-white"
+                />
+                <img
+                  src="./src/assets/men3.webp"
+                  alt="person"
+                  class="w-14 h-14 object-top object-cover rounded-full border-2 border-white"
+                />
+                <img
+                  src="./src/assets/men4.webp"
+                  alt="person"
+                  class="w-14 h-14 object-top object-cover rounded-full border-2 border-white"
+                />
+                <div
+                  class="w-14 h-14 object-top object-cover bg-lime-400 rounded-full flex items-center justify-center text-xl font-semibold border-2 border-white"
+                >
+                  +
+                </div>
+              </div>
+
+              <hr class="mb-8" />
+
+              <p class="text-lg font-medium text-[#0d0f1a] leading-relaxed">
+                “Creating modern homes and commercial spaces with precision
+                construction and trusted real estate expertise.”
+              </p>
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div class="space-y-8 commit-cards">
+              <!-- CARD 1 -->
+              <div
+                class="commit-card card-hover bg-white p-8 rounded-2xl border border-gray-200 flex flex-col xsmd:flex-row gap-6"
+              >
+                <div>
+                  <div
+                    class="w-14 h-14 bg-[#0d0f1a] text-white rounded-full flex items-center justify-center text-xl"
+                  >
+                    <i class="fa-solid fa-helmet-safety"></i>
+                  </div>
+                </div>
+
+                <div>
+                  <h4 class="text-xl font-semibold mb-2 text-[#0d0f1a]">
+                    Quality Craftsmanship - Superior construction with attention
+                    to detail
+                  </h4>
+                  <p class="text-gray-600 leading-relaxed">
+                    We prioritize precision building standards, ensuring every
+                    project reflects structural integrity, premium materials,
+                    and expert workmanship.
+                  </p>
+                </div>
+              </div>
+
+              <!-- CARD 2 -->
+              <div
+                class="commit-card card-hover bg-white p-8 rounded-2xl border border-gray-200 flex flex-col xsmd:flex-row gap-6"
+              >
+                <div>
+                  <div
+                    class="w-14 h-14 bg-[#0d0f1a] text-white rounded-full flex items-center justify-center text-xl"
+                  >
+                    <i class="fa-solid fa-leaf"></i>
+                  </div>
+                </div>
+
+                <div>
+                  <h4 class="text-xl font-semibold mb-2 text-[#0d0f1a]">
+                    Sustainability - Durable and environmentally conscious
+                    practices
+                  </h4>
+                  <p class="text-gray-600 leading-relaxed">
+                    Our developments incorporate eco-friendly construction
+                    methods and energy-efficient solutions that promote
+                    long-term sustainability.
+                  </p>
+                </div>
+              </div>
+
+              <!-- CARD 3 -->
+              <div
+                class="commit-card card-hover bg-white p-8 rounded-2xl border border-gray-200 flex flex-col xsmd:flex-row gap-6"
+              >
+                <div>
+                  <div
+                    class="w-14 h-14 bg-[#0d0f1a] text-white rounded-full flex items-center justify-center text-xl"
+                  >
+                    <i class="fa-solid fa-gears"></i>
+                  </div>
+                </div>
+
+                <div>
+                  <h4 class="text-xl font-semibold mb-2 text-[#0d0f1a]">
+                    Modern Techniques - Innovative construction and design
+                    methods
+                  </h4>
+                  <p class="text-gray-600 leading-relaxed">
+                    We leverage advanced construction technologies and project
+                    management systems to deliver efficient, future-ready
+                    developments.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FORM - CONTACT -->
+      <section
+        class="support-section max-w-7xl PY-24 mx-auto w-full relative overflow-hidden"
+      >
+        <div class="grid lg:grid-cols-2 items-start">
+          <!-- LEFT SIDE -->
+          <div class="relative support-left">
+            <div
+              class="relative z-10 px-4 py-8 md:p-16 text-black support-content"
+            >
+              <span
+                class="inline-flex items-center gap-2 bg-white/20 px-5 py-2 rounded-full text-sm mb-8"
+              >
+                <span class="w-2 h-2 bg-lime-400 rounded-full"></span>
+                Quick Support
+              </span>
+
+              <h2
+                class="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight mb-12"
+              >
+                Quick support when you <br />
+                <span class="italic font-light">need it most</span>
+              </h2>
+
+              <!-- CONTACT INFO -->
+              <div class="space-y-10">
+                <div class="flex items-center gap-5">
+                  <a href="./404.html" class="inline-block">
+                    <div
+                      class="contact-icon bg-lime-400 text-black w-12 h-12 flex items-center justify-center rounded-full"
+                    >
+                      <i class="fa-solid fa-phone"></i>
+                    </div>
+                  </a>
+                  <div>
+                    <p class="text-gray-500">Call Us Now!</p>
+                    <h4 class="text-xl font-semibold">+91 - 1234567890</h4>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-5">
+                  <a href="./404.html" class="inline-block">
+                    <div
+                      class="contact-icon bg-lime-400 text-black w-12 h-12 flex items-center justify-center rounded-full"
+                    >
+                      <i class="fa-solid fa-envelope"></i>
+                    </div>
+                  </a>
+                  <div>
+                    <p class="text-gray-500">E-mail Us Now!</p>
+                    <h4 class="text-xl font-semibold">info@stackly.com</h4>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-5">
+                  <a href="./404.html" class="inline-block">
+                    <div
+                      class="contact-icon bg-lime-400 text-black w-12 h-12 flex items-center justify-center rounded-full"
+                    >
+                      <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                  </a>
+                  <div>
+                    <p class="text-gray-500">Our Location</p>
+                    <h4 class="text-xl font-semibold">
+                      123 Main Street, Salem, Office 636008
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT FORM -->
+          <div class="flex items-center justify-center p-4 md:p-10">
+            <div
+              class="bg-white px-4 py-8 md:p-12 rounded-3xl shadow-xl w-full max-w-xl support-form"
+            >
+              <span
+                class="inline-flex items-center gap-2 bg-gray-100 px-5 py-2 rounded-full text-sm mb-8"
+              >
+                <span class="w-2 h-2 bg-lime-400 rounded-full"></span>
+                Get In Touch
+              </span>
+
+              <h2 class="text-3xl md:text-4xl font-semibold mb-10">
+                Send us a <span class="italic font-light">message</span>
+              </h2>
+
+              <form id="contactForm" class="space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                  <input
+                    type="text"
+                    id="firstName"
+                    placeholder="First Name"
+                    class="input-field border p-4 rounded-xl w-full"
+                  />
+
+                  <input
+                    type="text"
+                    id="lastName"
+                    placeholder="Last Name"
+                    class="input-field border p-4 rounded-xl w-full"
+                  />
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="Email Address"
+                    class="input-field border p-4 rounded-xl w-full"
+                  />
+
+                  <input
+                    type="number"
+                    id="phone"
+                    placeholder="Phone Number"
+                    class="input-field border p-4 rounded-xl w-full [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                  />
+                </div>
+
+                <textarea
+                  id="message"
+                  placeholder="Write Message"
+                  class="input-field border p-4 rounded-xl w-full h-32"
+                ></textarea>
+
+                <p id="formError" class="text-red-500 text-sm hidden"></p>
+
+                <button
+                  type="submit"
+                  class="support-btn bg-black text-white px-8 py-4 rounded-full"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section
+        class="section-testimonials max-w-7xl mx-auto px-6 py-24 overflow-hidden"
+      >
+        <!-- HEADER -->
+        <div class="grid lg:grid-cols-2 gap-10 items-start mb-16">
+          <div class="header-left">
+            <div
+              class="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm mb-6"
+            >
+              <span class="w-2 h-2 rounded-full bg-lime-400"></span>
+              <span class="text-sm font-medium text-gray-600"
+                >Our Testimonials</span
+              >
+            </div>
+
+            <h2
+              class="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight text-gray-900"
+            >
+              What our clients say about our<br />
+              <span class="italic font-normal text-gray-700"
+                >construction services</span
+              >
+            </h2>
+          </div>
+
+          <div
+            class="header-right flex flex-col items-start lg:items-end gap-6"
+          >
+            <p class="text-gray-500 max-w-md">
+              Our clients’ feedback reflects our commitment to quality,
+              reliability, and professionalism.
+            </p>
+
+            <a
+              href="./404.html"
+              class="btn-hover font-medium inline-flex items-center gap-3 bg-primary text-black px-4 py-2 rounded-full mb-6"
+            >
+              View All Reviews
+              <div>
+                <div
+                  class="bg-black text-primary rounded-full w-10 h-10 flex items-center justify-center"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- CARDS -->
+        <div class="cards-wrapper grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- CARD -->
+          <div
+            class="testimonial-card card-hover bg-white rounded-2xl p-8 shadow-sm"
+          >
+            <div class="flex justify-between items-center mb-6">
+              <div class="text-lime-400 text-lg space-x-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <i class="fa-solid fa-quote-right text-gray-300 text-2xl"></i>
+            </div>
+
+            <p class="text-gray-800 leading-relaxed mb-8">
+              “The construction was completed on time, and the finishing
+              exceeded our workmanship and strong project management. The team
+              delivered exceptional quality and maintained complete transparency
+              throughout the project. ”
+            </p>
+
+            <hr class="mb-6" />
+
+            <div class="flex items-center gap-4">
+              <img
+                src="./src/assets/men3.webp"
+                alt="person"
+                class="avatar-hover w-12 h-12 rounded-full object-cover object-top transition"
+              />
+              <div>
+                <h4 class="font-semibold text-gray-900">Joshi Malhothra</h4>
+                <p class="text-sm text-gray-500">Residential Client & Owner</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD -->
+          <div
+            class="testimonial-card card-hover bg-white rounded-2xl p-8 shadow-sm"
+          >
+            <div class="flex justify-between items-center mb-6">
+              <div class="text-lime-400 text-lg space-x-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <i class="fa-solid fa-quote-right text-gray-300 text-2xl"></i>
+            </div>
+
+            <p class="text-gray-800 leading-relaxed mb-8">
+              “The finishing exceeded our workmanship and strong project
+              management and the team delivered exceptional quality and
+              maintained complete transparency throughout the project. The
+              construction was completed on time.”
+            </p>
+
+            <hr class="mb-6" />
+
+            <div class="flex items-center gap-4">
+              <img
+                src="./src/assets/men4.webp"
+                alt="person"
+                class="avatar-hover w-12 h-12 rounded-full object-cover object-top transition"
+              />
+              <div>
+                <h4 class="font-semibold text-gray-900">Amita Patel</h4>
+                <p class="text-sm text-gray-500">Residential Client & Owner</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD -->
+          <div
+            class="testimonial-card card-hover bg-white rounded-2xl p-8 shadow-sm"
+          >
+            <div class="flex justify-between items-center mb-6">
+              <div class="text-lime-400 text-lg space-x-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <i class="fa-solid fa-quote-right text-gray-300 text-2xl"></i>
+            </div>
+
+            <p class="text-gray-800 leading-relaxed mb-8">
+              “The team delivered exceptional quality and maintained complete
+              transparency throughout the project. The construction was
+              completed on time, and the finishing exceeded our workmanship and
+              strong project management.”
+            </p>
+
+            <hr class="mb-6" />
+
+            <div class="flex items-center gap-4">
+              <img
+                src="./src/assets/men6.webp"
+                class="avatar-hover w-12 h-12 rounded-full object-cover object-top transition"
+              />
+              <div>
+                <h4 class="font-semibold text-gray-900">Rahul Mehta</h4>
+                <p class="text-sm text-gray-500">Residential Client</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="faq-section py-24 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="grid lg:grid-cols-2 gap-20 items-start">
+            <!-- LEFT SIDE -->
+            <div class="faq-left">
+              <div
+                class="faq-badge inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full mb-8 shadow-sm"
+              >
+                <span class="w-2 h-2 bg-lime-400 rounded-full"></span>
+                <span class="text-sm text-gray-600"
+                  >Frequently Asked Questions</span
+                >
+              </div>
+
+              <h2
+                class="faq-title text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight mb-10"
+              >
+                Your question <span class="italic font-light">answer</span
+                ><br />
+                by our experts
+              </h2>
+
+              <a
+                href="./404.html"
+                class="faq-btn font-medium inline-flex items-center gap-3 bg-primary text-black px-4 py-2 rounded-full mb-6"
+              >
+                View All FAQ’s
+                <div>
+                  <div
+                    class="bg-black text-primary rounded-full w-10 h-10 flex items-center justify-center"
+                  >
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square text-sm"
+                    ></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div class="faq-right space-y-5">
+              <!-- ITEM 1 (OPEN DEFAULT) -->
+              <div
+                class="faq-item bg-[#0b0f1c] text-white rounded-xl border border-gray-300 overflow-hidden"
+              >
+                <div
+                  class="faq-header flex justify-between items-center px-6 py-5 cursor-pointer"
+                >
+                  <h3 class="font-semibold">
+                    1. Are your construction processes transparent?
+                  </h3>
+                  <i class="faq-icon fa-solid fa-minus"></i>
+                </div>
+
+                <div class="faq-content px-6 pb-6">
+                  <p class="text-gray-300 mb-4">
+                    Yes, we specialize in both residential and commercial
+                    construction projects, delivering customized solutions based
+                    on client requirements, budget, and timelines.
+                  </p>
+                </div>
+              </div>
+
+              <!-- OTHER ITEMS -->
+              <div
+                class="faq-item bg-white rounded-xl border border-gray-300 overflow-hidden"
+              >
+                <div
+                  class="faq-header flex justify-between items-center px-6 py-5 cursor-pointer"
+                >
+                  <h3 class="font-semibold">
+                    2. Can you customize projects based on client needs?
+                  </h3>
+                  <i class="faq-icon fa-solid fa-plus"></i>
+                </div>
+                <div class="faq-content hidden px-6 pb-6 text-gray-300">
+                  <p>
+                    Yes, all our projects are fully customized based on
+                    requirements.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="faq-item bg-white rounded-xl border border-gray-300 overflow-hidden"
+              >
+                <div
+                  class="faq-header flex justify-between items-center px-6 py-5 cursor-pointer"
+                >
+                  <h3 class="font-semibold">
+                    3. Do you assist with approvals and documentation?
+                  </h3>
+                  <i class="faq-icon fa-solid fa-plus"></i>
+                </div>
+                <div class="faq-content hidden px-6 pb-6 text-gray-300">
+                  <p>
+                    We assist with complete approvals and documentation process.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="faq-item bg-white rounded-xl border border-gray-300 overflow-hidden"
+              >
+                <div
+                  class="faq-header flex justify-between items-center px-6 py-5 cursor-pointer"
+                >
+                  <h3 class="font-semibold">
+                    4. How can I get started with my project?
+                  </h3>
+                  <i class="faq-icon fa-solid fa-plus"></i>
+                </div>
+                <div class="faq-content hidden px-6 pb-6 text-gray-300">
+                  <p>Simply contact us to schedule a consultation.</p>
+                </div>
+              </div>
+
+              <div
+                class="faq-item bg-white rounded-xl border border-gray-300 overflow-hidden"
+              >
+                <div
+                  class="faq-header flex justify-between items-center px-6 py-5 cursor-pointer"
+                >
+                  <h3 class="font-semibold">
+                    5. How can I will my project take time?
+                  </h3>
+                  <i class="faq-icon fa-solid fa-plus"></i>
+                </div>
+                <div class="faq-content hidden px-6 pb-6 text-gray-300">
+                  <p>Project timeline depends on scope and complexity.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BLOGS -->
+      <section
+        class="blog-section max-w-7xl mx-auto px-6 py-24 overflow-hidden"
+      >
+        <!-- TAG -->
+        <div class="flex justify-center mb-6 blog-tag">
+          <div
+            class="bg-white shadow-sm rounded-full px-5 py-2 flex items-center gap-2"
+          >
+            <span class="w-2 h-2 bg-lime-400 rounded-full"></span>
+            <span class="text-gray-600 text-sm font-medium">Latest Blog</span>
+          </div>
+        </div>
+
+        <!-- TITLE -->
+        <h2
+          class="blog-title text-center text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 leading-tight mb-20"
+        >
+          Latest insights from real
+          <span class="italic font-normal">estate and<br />construction</span>
+        </h2>
+
+        <!-- CARDS -->
+        <div class="blog-grid grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <!-- CARD -->
+          <div
+            class="blog-card bg-white rounded-3xl overflow-hidden shadow-sm group"
+          >
+            <div class="overflow-hidden">
+              <img
+                src="./src/assets/b1.webp"
+                alt="blogs"
+                class="blog-img-hover w-full h-65 object-cover group-hover:scale-105 duration-500 ease-in-out"
+              />
+            </div>
+
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-5">
+                Modern Construction That Enhance Trends Shaping Urban Living
+              </h3>
+
+              <hr class="mb-5" />
+
+              <a
+                href="./404.html"
+                class="readmore-hover flex items-center gap-2 text-gray-800 font-medium"
+              >
+                Read More
+                <i class="fa-solid fa-arrow-right-long text-sm"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- CARD -->
+          <div
+            class="blog-card bg-white rounded-3xl overflow-hidden shadow-sm group"
+          >
+            <div class="overflow-hidden">
+              <img
+                src="./src/assets/b2.webp"
+                alt="blogs"
+                class="blog-img-hover w-full h-65 object-cover group-hover:scale-105 duration-500 ease-in-out"
+              />
+            </div>
+
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-5">
+                Benefits Of Quality Construction For Long-Term Value
+              </h3>
+
+              <hr class="mb-5" />
+
+              <a
+                href="./404.html"
+                class="readmore-hover flex items-center gap-2 text-gray-800 font-medium"
+              >
+                Read More
+                <i class="fa-solid fa-arrow-right-long text-sm"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- CARD -->
+          <div
+            class="blog-card bg-white rounded-3xl overflow-hidden shadow-sm group"
+          >
+            <div class="overflow-hidden">
+              <img
+                src="./src/assets/b3.webp"
+                alt="blogs"
+                class="blog-img-hover w-full h-65 object-cover group-hover:scale-105 duration-500 ease-in-out"
+              />
+            </div>
+
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-5">
+                Sustainable Building Practices For Future Ready Spaces
+              </h3>
+
+              <hr class="mb-5" />
+
+              <a
+                href="./404.html"
+                class="readmore-hover flex items-center gap-2 text-gray-800 font-medium"
+              >
+                Read More
+                <i class="fa-solid fa-arrow-right-long text-sm"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer
+        class="main-footer bg-[#1a2236] max-w-7xl mx-auto w-full relative pt-24 overflow-hidden text-white"
+      >
+        <!-- GRID BACKGROUND -->
+        <div
+          class="absolute inset-0 opacity-[0.06]"
+          style="background-size: 40px 40px"
+        ></div>
+
+        <div class="relative z-10 px-6">
+          <!-- TOP HEADER -->
+          <div
+            class="footer-header flex flex-col lg:flex-row justify-between items-start gap-12 mb-16"
+          >
+            <div class="footer-title">
+              <h2
+                class="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight"
+              >
+                Begin your construction
+                <span class="italic font-light">journey</span><br />
+                with trusted experts
+              </h2>
+            </div>
+
+            <div class="footer-social">
+              <p class="text-gray-300 mb-5">Explore Our Social Media</p>
+
+              <div class="flex gap-4">
+                <a
+                  href="./404.html"
+                  class="social-circle w-11 h-11 border border-lime-400 rounded-full flex items-center justify-center text-lime-400 cursor-pointer"
+                >
+                  <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+
+                <a
+                  href="./404.html"
+                  class="social-circle w-11 h-11 border border-lime-400 rounded-full flex items-center justify-center text-lime-400 cursor-pointer"
+                >
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a
+                  href="./404.html"
+                  class="social-circle w-11 h-11 border border-lime-400 rounded-full flex items-center justify-center text-lime-400 cursor-pointer"
+                >
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a
+                  href="./404.html"
+                  class="social-circle w-11 h-11 border border-lime-400 rounded-full flex items-center justify-center text-lime-400 cursor-pointer"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <hr class="border-gray-700 mb-16" />
+
+          <!-- FOOTER GRID -->
+          <div
+            class="footer-columns grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14"
+          >
+            <!-- BRAND -->
+            <div class="footer-col">
+              <div class="flex items-center gap-3 mb-6">
+                <h3 class="text-xl font-semibold text-primary">STACKLY</h3>
+              </div>
+
+              <p class="text-gray-300 leading-relaxed">
+                We are trusted builders and developers delivering modern,
+                high-quality residential and commercial construction solutions.
+              </p>
+            </div>
+
+            <!-- QUICK LINKS -->
+            <div class="footer-col">
+              <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+              <ul class="space-y-4 text-gray-300">
+                <li><a href="./404.html" class="footer-link">Home</a></li>
+                <li><a href="./404.html" class="footer-link">Blog</a></li>
+                <li><a href="./404.html" class="footer-link">About Us</a></li>
+                <li><a href="./404.html" class="footer-link">Contact Us</a></li>
+                <li><a href="./404.html" class="footer-link">Services</a></li>
+              </ul>
+            </div>
+
+            <!-- SERVICES -->
+            <div class="footer-col">
+              <h4 class="text-lg font-semibold mb-6">Our Services</h4>
+              <ul class="space-y-4 text-gray-300">
+                <li>
+                  <a href="./404.html" class="footer-link">Site Planning</a>
+                </li>
+                <li>
+                  <a href="./404.html" class="footer-link">Design & Planning</a>
+                </li>
+                <li>
+                  <a href="./404.html" class="footer-link"
+                    >Project Management</a
+                  >
+                </li>
+                <li>
+                  <a href="./404.html" class="footer-link">Building Design</a>
+                </li>
+                <li>
+                  <a href="./404.html" class="footer-link"
+                    >Interior Fit-Out Service</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- NEWSLETTER -->
+            <div class="footer-col">
+              <h4 class="text-lg font-semibold mb-6">Subscribe Newsletter</h4>
+              <p class="text-gray-300 mb-6">
+                Subscribe to receive the latest updates, insights, and project
+                news.
+              </p>
+
+              <form id="foot-form" class="newsletter-box">
+                <div class="relative">
+                  <input
+                    id="foot-email"
+                    type="email"
+                    placeholder="Enter Your E-mail"
+                    class="w-full bg-transparent border border-gray-400 rounded-full py-4 px-6 pr-16 text-white placeholder-gray-300 outline-none"
+                  />
+
+                  <button
+                    class="news-btn absolute right-2 top-1/2 -translate-y-1/2 bg-lime-400 text-black w-11 h-11 rounded-full flex items-center justify-center cursor-pointer"
+                  >
+                    <i class="fa-solid fa-paper-plane"></i>
+                  </button>
+                </div>
+
+                <div class="mt-2">
+                  <p id="footError" class="text-red-500 text-sm hidden"></p>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- COPYRIGHT -->
+          <div
+            class="footer-copy text-center text-gray-200 mt-20 py-6 border-t border-gray-400"
+          >
+            Copyright © 2026 All Rights Reserved.
+          </div>
+        </div>
+      </footer>
+
+      <!-- MODAL -->
+      <div
+        class="video-modal h-screen w-full fixed inset-0 bg-black/70 backdrop-blur hidden items-center justify-center z-50"
+      >
+        <div class="video-modal-content relative h-96 w-[90%] max-w-2xl py-6">
+          <button
+            class="close-btn video-close absolute -top-14 right-0 text-white text-3xl cursor-pointer"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+
+          <div class="aspect-video bg-black rounded-xl overflow-hidden">
+            <iframe
+              id="videoFrame"
+              class="w-full h-full"
+              src=""
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- SCROLL TOP -->
+      <button
+        class="scrollTopBtn fixed bottom-8 right-8 w-14 h-14 rounded-full bg-[#0b1220] flex items-center justify-center shadow-lg z-50"
+      >
+        <svg class="progress-ring absolute w-full h-full -rotate-90">
+          <circle
+            class="progress-bg"
+            cx="28"
+            cy="28"
+            r="24"
+            stroke="white"
+            stroke-opacity=".15"
+            stroke-width="3"
+            fill="transparent"
+          />
+
+          <circle
+            class="progress-bar"
+            cx="28"
+            cy="28"
+            r="24"
+            stroke="#a3e635"
+            stroke-width="3"
+            fill="transparent"
+            stroke-linecap="round"
+          />
+        </svg>
+
+        <i class="fa-solid fa-arrow-up text-white text-sm relative z-10"></i>
+      </button>
+    </div>
+
+    <!-- JS -->
+    <script src="./script.js"></script>
+  </body>
+</html>
