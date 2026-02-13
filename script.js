@@ -234,7 +234,7 @@ $(".ham-icon").click(function () {
     y: 0,
     duration: 0.6,
     ease: "power3.out",
-    stagger: 0.15, // 👈 one by one
+    stagger: 0.15,
     delay: 0.3,
   });
 });
