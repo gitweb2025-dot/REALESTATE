@@ -18,9 +18,11 @@
   border-radius: 10px;
 }
 
-/* GRID DARK BACKGROUND */
-
 /* FORM  */
+
+.support-btn{
+  transition: all 0.3s ease;
+}
 
 .support-btn:hover {
   transform: translateY(-3px);
@@ -190,3 +192,21 @@
   }
 }
 
+/* NAV HOVER */
+
+.nav-hover {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.nav-hover span {
+  display: block;
+  position: relative;
+}
+
+.nav-hover span::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 100%;
+}

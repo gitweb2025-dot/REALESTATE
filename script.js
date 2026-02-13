@@ -653,7 +653,7 @@ gsap.from(".support-form", {
     trigger: ".support-form",
     start: "top 85%",
   },
-  x: 100,
+  y: 100,
   opacity: 0,
   duration: 1,
   ease: "power3.out",
@@ -977,3 +977,15 @@ btn.onclick = () => {
   });
 };
 
+// NAV HOVER
+document.querySelectorAll(".nav-hover").forEach((link) => {
+  let text = link.querySelector("span");
+
+  link.addEventListener("mouseenter", () => {
+    gsap.to(text, { y: "-100%", duration: 0.3 });
+  });
+
+  link.addEventListener("mouseleave", () => {
+    gsap.to(text, { y: "0%", duration: 0.3 });
+  });
+});

@@ -135,7 +135,9 @@
               <!-- HOME DROPDOWN -->
               <div class="relative">
                 <div class="flex items-center gap-1 font-medium">
-                  <a href="./index.html" class="font-medium">HOME</a>
+                  <a class="nav-hover" href="./index.html" class="font-medium"
+                    ><span data-text="HOME">HOME</span></a
+                  >
 
                   <button id="homeToggle">
                     <svg
@@ -169,20 +171,31 @@
               </div>
 
               <!-- ABOUT -->
-              <a href="./404.html">ABOUT</a>
-              <a href="./404.html">SERVICES</a>
-              <a href="./404.html">PRICING</a>
-              <a href="./404.html">CONTACT</a>
+              <a class="nav-hover" href="./404.html"
+                ><span data-text="ABOUT">ABOUT</span></a
+              >
+              <a class="nav-hover" href="./404.html"
+                ><span data-text="SERVICES">SERVICES</span></a
+              >
+              <a class="nav-hover" href="./404.html"
+                ><span data-text="PRICING">PRICING</span></a
+              >
+              <a class="nav-hover" href="./404.html"
+                ><span data-text="CONTACT">CONTACT</span></a
+              >
             </div>
             <div>
               <a
                 href="./404.html"
-                class="font-medium hidden lg:flex items-center gap-3 bg-primary text-black px-4 py-2 rounded-full"
+                class="font-medium hidden lg:flex items-center gap-3 bg-primary text-black px-4 py-2 rounded-full relative group overflow-hidden z-10 hover:text-primary transition-all duration-500 ease-in-out"
               >
+                <div
+                  class="absolute inset-0 z-[-1] w-0 bg-black rounded-full group-hover:w-full group-hover:h-full transition-all duration-500 ease-in-out"
+                ></div>
                 Get Consultation
                 <div>
                   <div
-                    class="bg-black text-primary rounded-full w-10 h-10 flex items-center justify-center"
+                    class="bg-black text-primary rounded-full w-10 h-10 flex items-center justify-center group-hover:text-black group-hover:bg-primary transition-all duration-500 ease-in-out"
                   >
                     <i
                       class="fa-solid fa-arrow-up-right-from-square text-sm"
@@ -1474,7 +1487,7 @@
 
                 <button
                   type="submit"
-                  class="support-btn bg-black text-white px-8 py-4 rounded-full"
+                  class="support-btn bg-black text-white px-8 py-4 rounded-full cursor-pointer"
                 >
                   Send Message
                 </button>
@@ -1932,7 +1945,7 @@
                   href="./404.html"
                   class="social-circle w-11 h-11 border border-lime-400 rounded-full flex items-center justify-center text-lime-400 cursor-pointer"
                 >
-                  <i class="fa-brands fa-pinterest-p"></i>
+                  <i class="fa-brands fa-pinterest-p pointer-events-none z-[-1]"></i>
                 </a>
 
                 <a
